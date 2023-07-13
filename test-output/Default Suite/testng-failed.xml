@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Project1(failed)">
+    <classes>
+      <class name="com.sample.tests.PubSubTest">
+        <methods>
+          <include name="printTest"/>
+        </methods>
+      </class> <!-- com.sample.tests.PubSubTest -->
+    </classes>
+  </test> <!-- Project1(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

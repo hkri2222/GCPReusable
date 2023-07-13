@@ -1,0 +1,2 @@
+{ message : "JSON message1 is published", data: "sample" }
+{ message : "JSON message2 is published", data: "sample" }

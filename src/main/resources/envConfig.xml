@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <config type="testConfig" name="smoke">
+        <!--<hostname>https://qa-backstage.devops.fds.com</hostname>-->
+        <hostname></hostname>
+        <gcp_service_account_path>src/main/resources/cred.json</gcp_service_account_path>
+
+        <datafiles>
+            <excelfilepath>src/main/resources/sample2.xlsx</excelfilepath>
+        </datafiles>
+
+        <gcpresources>
+        <spanner>
+            <gcpprojectname>pocproject-375109</gcpprojectname>
+        </spanner>
+
+            <pubsub>
+                <PubSub_TOPIC>sampletopic1</PubSub_TOPIC>
+                <PubSub_Subscription>sampletopic1-sub</PubSub_Subscription>
+            </pubsub>
+           <bigquery>
+               <gcpbqtablename>bigquery-public-data.samples.shakespeare</gcpbqtablename>
+           </bigquery>
+            <cloudstorage>
+                <gcsbucketname>pocdemobucket</gcsbucketname>
+            </cloudstorage>
+
+        </gcpresources>
+
+        <purgesubscriptions>
+            first-topic-sub1,
+            test-sub
+        </purgesubscriptions>
+
+    </config>
+</document>
